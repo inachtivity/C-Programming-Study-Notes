@@ -7,7 +7,7 @@
 
 #define MAXLINE 5
 
-int getLine(char line[], int maxLine);
+int countLine(char line[], int maxLine);
 void copy(char to[], char from[]);
 
 int main() {
@@ -33,7 +33,7 @@ int main() {
     return 0;
 }
 
-int getLine (char s[], int lim) {
+int countLine (char s[], int lim) {
     int c, i, len;
 
     i = len = 0;
