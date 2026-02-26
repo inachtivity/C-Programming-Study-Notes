@@ -5,16 +5,21 @@
 *
 */
 
-#define FEEBASE 166
+#define INCHES_PER_POUND 166
 
 int main(void) {
 
     float height, length, width, volume, dimensionalWeight;
-    height = 12.0;
-    length = 10.0;
-    width = 8.0;
+
+    printf("Enter the Height of the Package: ");
+    scanf("%f", &height);
+    printf("Enter the Length of the Package: ");
+    scanf("%f", &length);
+    printf("Enter the Width of the Package: ");
+    scanf("%f", &width);
+
     volume = height * length * width;
-    dimensionalWeight = volume / FEEBASE;
+    dimensionalWeight = volume / INCHES_PER_POUND;
 
     printf("Dimensions: %.0fx%.0fx%.0f\n", height, length, width);
     printf("Volume (cubic inches): %.0f\n", volume);
