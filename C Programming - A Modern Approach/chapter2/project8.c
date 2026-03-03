@@ -35,6 +35,5 @@ int main(void)
     balance = (balance - monthlyPayment) + ((balance * (interestRate / 12.00f)) / 100.00f);
     printf("Balance remaining after 3rd payment: %.2f\n", balance);
 
-
     return 0;
 }
