@@ -30,23 +30,18 @@ int main(void)
     if (trade_value < 2500.00){
         comm_rate = 30.00 + (trade_value * .017);
     }
-
     else if (trade_value >= 2500.00 && trade_value < 6250.00){
         comm_rate = 56.00 + (trade_value * 0.0066);
     }
-
     else if (trade_value >= 6250.00 && trade_value < 20000.00){
         comm_rate = 76.00 + (trade_value * 0.0034);
     }
-
     else if (trade_value >= 20000.00 && trade_value < 50000.00){
         comm_rate = 100.00 + (trade_value * 0.0022);
     }
-
     else if (trade_value >= 50000.00 && trade_value < 500000.00){
         comm_rate = 155.00 + (trade_value * 0.0011);
     }
-
     else {
         comm_rate = 255.00 + (trade_value * 0.0009);
     }
