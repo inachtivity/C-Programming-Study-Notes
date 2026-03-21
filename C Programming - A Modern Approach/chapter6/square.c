@@ -9,12 +9,12 @@ int main(void)
 
     int n, i = 1;
 
-    printf("This programp prints a table of squares.\n");
+    printf("This program prints a table of squares.\n");
     printf("Enter number of entries in table: ");
     scanf("%d", &n);
 
     while (i <= n) {
-        printf("%d\t%d\n", i, i * i);
+        printf("%10d%10d\n", i, i * i);
         i++;
     }
 
