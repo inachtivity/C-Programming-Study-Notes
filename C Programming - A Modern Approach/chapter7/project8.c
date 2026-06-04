@@ -25,7 +25,7 @@ int main(void)
     int mid1, mid2, mid3, mid4, mid5, mid6, mid7;
     char am_pm;
  
-    printf("Enter a 12-hour time: ");
+    printf("Enter a 12-hour time (AM/PM): ");
     scanf("%d:%d %c", &hour, &min, &am_pm);
 
     am_pm = toupper(am_pm);
