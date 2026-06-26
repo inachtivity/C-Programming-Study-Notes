@@ -10,7 +10,6 @@
 #include <stdbool.h>
 int main(void){
 
-
     int digit_seen[10] = {0};
     int digit;
     long num;
@@ -34,7 +33,7 @@ int main(void){
         }
     }
 
-    if (repeat == false) {
+    if (!repeat) {
         printf("none");
     }
 
